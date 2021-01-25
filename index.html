@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-JavaScrpit入门笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/01/26/JavaScrpit%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time class="dt-published" datetime="2021-01-25T19:18:10.000Z" itemprop="datePublished">2021-01-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/01/26/JavaScrpit%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/">JavaScrpit入门笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="JavaSript入门笔记"><a href="#JavaSript入门笔记" class="headerlink" title="JavaSript入门笔记"></a>JavaSript入门笔记</h1><p>// 单行注释<br>/* */ 多行注释</p>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ol>
+<li>Var: 全局作用域，大多数时候不要用</li>
+<li>let： 可以重新赋值</li>
+<li>const： 不可以重新赋值并且要初始化</li>
+</ol>
+<p>大多数时候只用const，除非确定要重新赋值（增加鲁棒性）。</p>
+<h2 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h2><h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><ol>
+<li>与  $&amp;&amp;$</li>
+<li>或  $||$<h3 id="和-的区别"><a href="#和-的区别" class="headerlink" title="==和===的区别"></a>==和===的区别</h3>在Javascript中提供了两种判断相等的符号</li>
+<li>== 等于，不必考虑类型</li>
+<li>=== 绝对等于</li>
+</ol>
+<p><strong>举例</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> x=<span class="string">&#x27;10&#x27;</span></span><br><span class="line"><span class="keyword">const</span> y=<span class="number">10</span></span><br><span class="line"><span class="comment">//==</span></span><br><span class="line">x==<span class="number">10</span><span class="comment">// is true</span></span><br><span class="line">y==<span class="number">10</span><span class="comment">// is true</span></span><br><span class="line"><span class="comment">//===</span></span><br><span class="line">x===<span class="number">10</span><span class="comment">//is false</span></span><br><span class="line">x===<span class="number">10</span><span class="comment">//is true</span></span><br></pre></td></tr></table></figure>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ol>
+<li>string</li>
+<li>number</li>
+<li>boolean</li>
+<li>null</li>
+<li>undefined</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> name=<span class="string">&#x27;john&#x27;</span>;<span class="comment">//Strings</span></span><br><span class="line"><span class="keyword">const</span> age=<span class="number">30</span>;<span class="comment">//number</span></span><br><span class="line"><span class="keyword">const</span> rating=<span class="number">4.5</span>;</span><br><span class="line"><span class="keyword">const</span> isCool=<span class="literal">true</span>;<span class="comment">//Boolean</span></span><br><span class="line"><span class="keyword">const</span> x=<span class="literal">null</span>;<span class="comment">//null(Object)</span></span><br><span class="line"><span class="keyword">const</span> y=<span class="literal">undefined</span>;<span class="comment">//undefined</span></span><br><span class="line"><span class="keyword">let</span> z;<span class="comment">//undefined</span></span><br></pre></td></tr></table></figure>
+<p><em>js中不是必须要些;</em><br><em>js中不区分浮点数，只是Numbers类型</em></p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><h4 id="拼接"><a href="#拼接" class="headerlink" title="拼接"></a>拼接</h4><ol>
+<li>Concatenation : +<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;i&#x27;</span>+<span class="string">&#x27;am&#x27;</span>);</span><br></pre></td></tr></table></figure></li>
+<li>Template String</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> hellow=<span class="string">&#x27;i am $&#123;name&#125;&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p><em>${}中的是另一个字符串变量名</em></p>
+<h4 id="字符串的属性和方法"><a href="#字符串的属性和方法" class="headerlink" title="字符串的属性和方法"></a>字符串的属性和方法</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> s=<span class="string">&#x27;hello&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(s.length)<span class="comment">//字符串长度</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(s.toUpperCase());<span class="comment">//字符串全部转为大写</span></span><br><span class="line"><span class="built_in">console</span>.log(s.substring(<span class="number">0</span>,<span class="number">5</span>));<span class="comment">//截取字串：</span></span><br><span class="line"><span class="built_in">console</span>.log(s.split(<span class="string">&#x27;,&#x27;</span>));<span class="comment">//字符串分割，返回一个字符串数组</span></span><br></pre></td></tr></table></figure>
+<p>*<strong>属性</strong>没有括号，<strong>方法</strong>才有括号*</p>
+<p>js方法支持<strong>链接调用</strong>：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(s.substring(<span class="number">0</span>,<span class="number">5</span>).toUpperCase());</span><br></pre></td></tr></table></figure>
+<p><strong>截取字串的规则</strong>： 从0开始。截取第一个参数到第二个参数前一位的字串。</p>
+<h2 id="数组：保存多个值的变量"><a href="#数组：保存多个值的变量" class="headerlink" title="数组：保存多个值的变量"></a>数组：保存多个值的变量</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> numbers=<span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>);<span class="comment">//结构体方式创建数字数组</span></span><br><span class="line"><span class="keyword">const</span> fruit=[<span class="string">&#x27;apple&#x27;</span>,<span class="string">&#x27;orange&#x27;</span>];<span class="comment">//纯字符串数组</span></span><br><span class="line"><span class="keyword">const</span> mixe=[<span class="string">&#x27;apple&#x27;</span>,<span class="string">&#x27;orange&#x27;</span>,<span class="number">10</span>,<span class="literal">true</span>]<span class="comment">//混合数组</span></span><br></pre></td></tr></table></figure>
+<p><em>new 后面写<strong>构造函数</strong></em><br><strong>js的数组可以包括不同的类型，相当灵活</strong></p>
+<p>js数组从0开始计数并且可以使用[]进行下标访问：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fruits[<span class="number">0</span>]<span class="comment">//返回&#x27;apple&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>const数组可以添加或删去值，<strong>唯一不能做的就是置为空，</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">fruits[<span class="number">2</span>]=<span class="string">&#x27;banana&#x27;</span>;<span class="comment">//在数组末尾添加了一个值，但不是醉倒的方式（有时候不知道确切值）</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*好的方式*/</span></span><br><span class="line">fruits.push(<span class="string">&#x27;grape&#x27;</span>);<span class="comment">//在末尾添加</span></span><br><span class="line">fruits.unshift(<span class="string">&#x27;strawberries&#x27;</span>);<span class="comment">//从开头添加</span></span><br><span class="line">fruits.pop();<span class="comment">//从末尾删除</span></span><br><span class="line"></span><br><span class="line">fruits.indexOf(<span class="string">&#x27;banana&#x27;</span>);<span class="comment">//返回 值对应的下标</span></span><br><span class="line"></span><br><span class="line">fruits.isArray();<span class="comment">//判断fruits是否为数组</span></span><br><span class="line">fruits.isArray(<span class="string">&#x27;hello&#x27;</span>);<span class="comment">//判断某个值是否为数组</span></span><br></pre></td></tr></table></figure>
+<h2 id="对象：键值对"><a href="#对象：键值对" class="headerlink" title="对象：键值对"></a>对象：键值对</h2><h3 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> person=&#123;</span><br><span class="line">    firstName: <span class="string">&#x27;John&#x27;</span>,</span><br><span class="line">    lastName: <span class="string">&#x27;Doe&#x27;</span>,</span><br><span class="line">    age:<span class="number">30</span>,</span><br><span class="line">    hobbies: [<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>],</span><br><span class="line">    address: &#123;</span><br><span class="line">        City: <span class="string">&#x27;Boston&#x27;</span>,</span><br><span class="line">        state: <span class="string">&#x27;MA&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Javascript中对象可以作为数组的值，数组也可以作为对象的值</strong></p>
+<p>avaScript中的任何数据类型都可以当作值(value)，甚至包括<strong>数组和对象</strong>。</p>
+<h3 id="访问对象"><a href="#访问对象" class="headerlink" title="访问对象: ."></a>访问对象: .</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(person.firstName);<span class="comment">//&#x27;Jhon&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(person.hobbies[<span class="number">0</span>]);<span class="comment">//&#x27;a&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(person.address.City);<span class="comment">//&#x27;Boston&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="解构对象：获取与对象中的键同名的实际变量-ES6的新特性"><a href="#解构对象：获取与对象中的键同名的实际变量-ES6的新特性" class="headerlink" title="解构对象：获取与对象中的键同名的实际变量(ES6的新特性)"></a>解构对象：获取与对象中的键同名的实际变量(ES6的新特性)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123;firstName , lastName&#125; = person <span class="comment">//firstName等于&#x27;John&#x27;,lastName等于&#x27;Doe&#x27;</span></span><br></pre></td></tr></table></figure>
+<p><strong>获取对象值中的对象的键的同名变量</strong></p>
+<h3 id="解构对象：获取与对象中的键同名的实际变量"><a href="#解构对象：获取与对象中的键同名的实际变量" class="headerlink" title="解构对象：获取与对象中的键同名的实际变量"></a>解构对象：获取与对象中的键同名的实际变量</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123;firstName , lastName，address:&#123;City&#125;&#125; = person </span><br></pre></td></tr></table></figure>
+<h3 id="添加属性（添加键值对）"><a href="#添加属性（添加键值对）" class="headerlink" title="添加属性（添加键值对）"></a>添加属性（添加键值对）</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">person.email=<span class="string">&#x27;123@gmail.com&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="对象数组"><a href="#对象数组" class="headerlink" title="对象数组"></a>对象数组</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> todos = [</span><br><span class="line">    &#123;</span><br><span class="line">        id: <span class="number">1</span>,</span><br><span class="line">        text:<span class="string">&#x27;take out trash&#x27;</span>,</span><br><span class="line">        isCompleted: <span class="literal">true</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        id: <span class="number">2</span>,</span><br><span class="line">        text:<span class="string">&#x27;meeting with boss&#x27;</span>,</span><br><span class="line">        isCompleted: <span class="literal">true</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        id: <span class="number">3</span>,</span><br><span class="line">        text:<span class="string">&#x27;Dnetist appt&#x27;</span>,</span><br><span class="line">        isCompleted: <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h2 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h2><p>JSON格式和上面的对象数组很类似，区别在于键值都加上了双引号<br><strong>讲对象数组转化为JSON</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> todoJSON=<span class="built_in">JSON</span>.stringify(todos)；</span><br></pre></td></tr></table></figure>
+<h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><p>JavaScript中的基本循环(for,while)的句法和c++很相似,但是提供了一些独特的循环方式(for…of,for…each.map,filter)</p>
+<h3 id="For"><a href="#For" class="headerlink" title="For"></a>For</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i &lt;= <span class="number">10</span>; i++&gt;)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="While"><a href="#While" class="headerlink" title="While"></a>While</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span>(i &lt; <span class="number">10</span> )</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i);</span><br><span class="line">    i++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="For…-Of"><a href="#For…-Of" class="headerlink" title="For… Of"></a>For… Of</h3><p>和for循环很相似但是更具可读性</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> todo <span class="keyword">of</span> todos)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(todo.text);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>*其中todo可以理解为循环变量，在第1次循环中，todo就是todos[0],在第2次循环中，todo就是todos[1];</p>
+<h3 id="迭代数组的方法-forEach-map-filter"><a href="#迭代数组的方法-forEach-map-filter" class="headerlink" title="迭代数组的方法:forEach map filter"></a>迭代数组的方法:forEach map filter</h3><h4 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">todos.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">todo</span>)</span>&#123;   <span class="comment">//todo是循环变量</span></span><br><span class="line">    <span class="built_in">console</span>.log(todo.text);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><p><strong>map: 从数组中创建数组</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> todoText=todos.map(<span class="function"><span class="keyword">function</span>(<span class="params">todo</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> todo.text;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>todoText中保存了一个有todos的每一个元素的text对应的值组成的数组</p>
+<h4 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h4><p><strong>filter: 根据条件创建新数组，在酒店数组中根据条件筛选出，满足条件的项</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> todoCompleted = todos.map(<span class="function"><span class="keyword">function</span>(<span class="params">todo</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> todo.isCompleted === <span class="literal">true</span>;<span class="comment">//筛选条件</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>剔除掉原数组里不满足条件的项，将满足条件的项组织成新的数组并返回</p>
+<h2 id="条件"><a href="#条件" class="headerlink" title="条件"></a>条件</h2><p>Javascript的条件语句和c++的很类似，具体区别会说明</p>
+<h3 id="if"><a href="#if" class="headerlink" title="if"></a>if</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">x=<span class="number">10</span></span><br><span class="line"><span class="keyword">if</span>(x === <span class="number">10</span>)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;x is 10&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (x &gt; <span class="number">10</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;x &gt; 10&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;x &gt; 10&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id=""><a href="#" class="headerlink" title="? :"></a>? :</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> x=<span class="number">11</span>;</span><br><span class="line"><span class="keyword">const</span> color= x&gt;<span class="number">10</span> ? <span class="string">&#x27;red&#x27;</span> : <span class="string">&#x27;blue&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p>三个参数第一个是条件，若条件满足则返回第二个参数，若不满足则返回第三个参数</p>
+<h3 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(color)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&#x27;red&#x27;</span>:</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;color is red&#x27;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&#x27;blue&#x27;</span>:</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;color is blue&#x27;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;color is not red or blue&#x27;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>和c++的区别</strong>：JavaScript的switch语句当中传递的<strong>判断变量不一定要是整数</strong>。</p>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="普通函数"><a href="#普通函数" class="headerlink" title="普通函数"></a>普通函数</h3><p><strong>示例: 函数声明+实现+调用</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addNums</span>(<span class="params">num1=<span class="number">1</span>,num2=<span class="number">2</span></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(num1+num2);</span><br><span class="line">    <span class="keyword">return</span> num1+num2;</span><br><span class="line">&#125;</span><br><span class="line">addNume(<span class="number">5</span>,<span class="number">5</span>);</span><br></pre></td></tr></table></figure>
+<p><strong>函数说明</strong></p>
+<ol>
+<li>声明的括号中为形式参数</li>
+<li>可以添加默认参数，在无参数传入时就视为传入默认值</li>
+<li>如果函数没有默认值，且参数列表出错，那么函数会返回NaN(意为：not a number)，不会中断代码执行</li>
+</ol>
+<h3 id="箭头函数（ES6"><a href="#箭头函数（ES6" class="headerlink" title="箭头函数（ES6)"></a>箭头函数（ES6)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//无返回值</span></span><br><span class="line"><span class="keyword">const</span> addNums=&#123;num1=<span class="number">1</span>,num2=<span class="number">1</span>&#125; =&gt; <span class="built_in">console</span>.log(num1+num2);</span><br><span class="line"><span class="comment">//有返回值 写法一</span></span><br><span class="line"><span class="keyword">const</span> addNums=&#123;num1=<span class="number">1</span>,num2=<span class="number">1</span>&#125; =&gt; num1+num2;<span class="comment">//箭头后面的就是返回值</span></span><br><span class="line"><span class="comment">//有返回值 写法二</span></span><br><span class="line"><span class="keyword">const</span> addNums=&#123;num1=<span class="number">1</span>,num2=<span class="number">1</span>&#125; =&gt; &#123;</span><br><span class="line">    <span class="keyword">return</span> num1+num2;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>可以理解为箭头前面为参数列表，后面为提供了一些简化操作函数体</p>
+<p><strong>箭头函数的最简化形式：一个参数一句函数:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> addNums = <span class="function"><span class="params">num1</span> =&gt;</span> num1+<span class="number">5</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h2><p><strong>联系前面讲过的: 对象</strong></p>
+<h3 id="用函数原型实现构造函数"><a href="#用函数原型实现构造函数" class="headerlink" title="用函数原型实现构造函数"></a>用函数原型实现构造函数</h3><p><strong>实现构造函数和是实现普通函数的区别</strong></p>
+<ol>
+<li>原型的首字母要到大写</li>
+<li>参数传入需要设置的属性</li>
+<li>将函数者只为对象的属性，使用this</li>
+</ol>
+<p><strong>示例: 构造+实例化:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//构造函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">firstName,lastName,dob</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.firstname = firstName;</span><br><span class="line">    <span class="built_in">this</span>.lastName = lastName;</span><br><span class="line">    <span class="built_in">this</span>.dob = dob;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//实例化</span></span><br><span class="line"><span class="keyword">const</span> person1=<span class="keyword">new</span> Person(<span class="string">&#x27;John&#x27;</span>,<span class="string">&#x27;edo&#x27;</span>,<span class="string">&#x27;4-3-1980&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><strong>延展示例: 对象包含对象&amp;&amp;对象包含函数:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">firstName,lastName,dob</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.firstname = firstName;</span><br><span class="line">    <span class="built_in">this</span>.lastName = lastName;</span><br><span class="line">    <span class="built_in">this</span>.dob = <span class="built_in">Date</span>(dob);<span class="comment">//Data()为自定义构造函数，此时dob也是一个对象</span></span><br><span class="line">    <span class="built_in">this</span>.getBirthYear = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.dob.getFullYear();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//实例化及函数调用</span></span><br><span class="line"><span class="keyword">const</span> person1=<span class="keyword">new</span> Person(<span class="string">&#x27;John&#x27;</span>,<span class="string">&#x27;edo&#x27;</span>,<span class="string">&#x27;4-3-1980&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(person1.getBirthYear());</span><br></pre></td></tr></table></figure>
+<p><strong>延展示例: 构造函数外实现对象中的函数</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">firstName,lastName,dob</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.firstname = firstName;</span><br><span class="line">    <span class="built_in">this</span>.lastName = lastName;</span><br><span class="line">    <span class="built_in">this</span>.dob = <span class="built_in">Date</span>(dob);<span class="comment">//Data()为自定义构造函数，此时dob也是一个对象</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Person.prototype.getBirthYear=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">this</span>.dob.getFullYear();</span><br><span class="line">&#125;<span class="comment">//在构造函数中甚至连声明也不要写</span></span><br></pre></td></tr></table></figure>
+<h3 id="类-ES6"><a href="#类-ES6" class="headerlink" title="类(ES6)"></a>类(ES6)</h3><p>和其他编程语言的类很像，更好上手、漂亮、易读。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//class</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="title">constructor</span>(<span class="params">firstName,lastName,dob</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">this</span>.firstname = firstName;</span><br><span class="line">        <span class="built_in">this</span>.lastName = lastName;</span><br><span class="line">        <span class="built_in">this</span>.dob = <span class="built_in">Date</span>(dob);<span class="comment">//Data()为自定义构造函数，此时dob也是一个对象</span></span><br><span class="line">    &#125;</span><br><span class="line">    getBirthYear=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.dob.getFullYear();</span><br><span class="line">    &#125;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/01/26/JavaScrpit%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" data-id="ckkcyeblt0000ncv5gycg1eds" data-title="JavaScrpit入门笔记" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/01/26/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2021-01-25T18:55:08.417Z" itemprop="datePublished">2021-01-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/01/26/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/01/26/hello-world/" data-id="ckkcxm7xs0000vkv56d72bfci" data-title="Hello World" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/01/26/JavaScrpit%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/">JavaScrpit入门笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2021/01/26/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
